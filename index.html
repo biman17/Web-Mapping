@@ -96,25 +96,25 @@
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-store-line"></i>
+            <i class="ri-ruler-2-line"></i>
             <h3><a>Photogrammetry</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
+            <i class="ri-earth-fill"></i>
             <h3><a>Web-Mapping</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
+            <i class="ri-road-map-fill"></i>
             <h3><a>Geo-Visualization</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-database-2-line"></i>
+            <i class="ri-open-source-fill"></i>
             <h3><a>Open Standards</a></h3>
           </div>
         </div>
@@ -150,8 +150,8 @@
               <li><i class="ri-check-double-line"></i> 3D city modelling</li>
               <li><i class="ri-check-double-line"></i> Crisis management</li>
             </ul>
-            <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/web_mapping.html"
-              class="normal-btn scrollto">View Web-Mapping Process</a>
+            <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/definitions.html"
+              class="normal-btn scrollto">Learn More</a>
           </div>
         </div>
 
@@ -194,14 +194,15 @@
 
     <!-- ======= Features Section ======= -->
     <section id="products" class="features">
-   <!-- ======= Cta Section ======= -->
-   <section id="cta" class="cta">
-    <div class="container" data-aos="zoom-in">
-  </section><!-- End Cta Section -->
-  <br>
-  <br>
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">      </div>
 
-  <div class="container" data-aos="fade-up">
+      </section><!-- End Cta Section -->
+      <br>
+      <br>
+
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Products</h2>
           <p>Check our Products</p>
@@ -216,11 +217,11 @@
                 buildings,
                 trees, powerlines, and any other objects. Commonly this is seen as a canopy model
                 and only 'sees' ground where there is nothing else covering it.</p>
-                 <div class="container" style="text-align: center;">
-                  <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/static_maps.html#dsm"
+              <div class="container" style="text-align: center;">
+                <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/static_maps.html#dsm"
                   class="normal-btn scrollto">View DSM Map</a>
-                   </div>
-                   </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -237,16 +238,14 @@
                 surface consisting of X, Y, Z coordinates stored in digital form. It includes not
                 only heights and elevations but other geographical elements and natural features
                 (such as rivers, mountains etc.).</p>
-                <div class="container" style="text-align: center;">
-                  <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/static_maps.html#dtm"
+              <div class="container" style="text-align: center;">
+                <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/static_maps.html#dtm"
                   class="normal-btn scrollto">View DTM Map</a>
-                   </div>
+              </div>
             </div>
           </div>
           <div class="image col-lg-6" style='background-image: url("assets/img/dtm.PNG");' data-aos="fade-right"></div>
         </div>
-      </div>
-      </div>
       </div>
     </section><!-- End Features Section -->
 
@@ -264,10 +263,79 @@
             Info" tab.</strong>
           You can also enable/disable raster layers and switch between the OSM and Bing baselayers.
         </p>
+        <div class="container" style="text-align: center;">
+          <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/web_mapping.html"
+          class="normal-btn scrollto">View Web-Mapping Process</a>
+    </div>
+      </div>
+      <br>
+      <br>
+      <div class="container justify-center">
+        <div class="row">
+          <div class="col-sm">
+            <div id="map_container"
+              style="position: relative; width: 1000px; height: 600px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 2px">
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="row"
+              style="position: relative;  height: 100px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 2px">
+              <h5><strong>Coordinates</strong></h5>
+              <div id="mouse_container" style="position: relative; font-size: larger; top:0 ; text-align:justify;">
+              </div>
+            </div>
+
+            <div class="row"
+              style="position: relative;  height: 496px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 2px">
+              <h5><strong>Legend</strong></h5>
+
+              <div class="col-xs-4">
+                <h5>DSM</h5>
+                <img
+                  src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2578956/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=dsm"
+                  alt="">
+              </div>
+              <br>
+              <div class="column">
+                <h5>DTM</h5>
+                <img
+                  src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2578956/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=dtm"
+                  alt="">
+              </div>
+              <br>
+              <div class="column">
+                <h5>Contour Lines</h5>
+
+                <div class="column">
+                  <img
+                    src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2578956/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=contour_dtm"
+                    alt="">
+                </div>
+                <div class="column">
+                  <img
+                    src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2578956/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=contour_dsm"
+                    alt="">
+                </div>
+              </div>
+              <br>
+            </div>
+
+          </div>
+          <div class="col-sm">
+            <div id="container"
+              style="position: absolute;  height: 600px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 2px">
+              <h5><strong>Feature Info</strong></h5>
+              <div id="queryresultsDiv"
+                style="width: 250px; height: 600px; overflow: auto; text-transform: capitalize; font-weight: bolder; ">
+              </div>
+            </div>
+          </div>
+          <br>
+
+        </div>
       </div>
 
-      </div>
-      </div>
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
@@ -278,17 +346,17 @@
           <h2>3D Visualization</h2>
         </div>
         <p>The above maps are further visualized as 3D models of DTM and DSM. Since the study area is a
-          flat land, the variations in the elevation across the layer is not very prominently visible.
+          flat land, the variations in the elevation across the layer is not very prominently visible. Hence elevation data was interpolated accordingly to show the variations in the terrain.
 
           Qgis2threejs plugin on QGIS software was used to render the 3D views which uses WebGL(Web
           Graphics Library), a
           Javascript API for rendering high performance interactive 3D and 2D graphics with any
           comaptible web browser.</p>
 
-          <div class="container" style="text-align: center;">
-            <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/3d_view.html"
+        <div class="container" style="text-align: center;">
+          <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/3d_view.html"
             class="normal-btn scrollto">Click For 3D View</a>
-             </div>
+        </div>
 
       </div>
     </section><!-- End Services Section -->
@@ -299,7 +367,7 @@
       </div>
     </section><!-- End Cta Section -->
 
-   <!-- ======= Counts Section ======= -->
+    <!-- ======= Counts Section ======= -->
     <section id="quality" class="counts">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -315,8 +383,8 @@
             <div class="content d-flex flex-column justify-content-center">
               <div class="container" style="text-align: center;">
                 <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/quality.html"
-                class="normal-btn scrollto">View Quality Assessment</a>
-                 </div>
+                  class="normal-btn scrollto">View Quality Assessment</a>
+              </div>
             </div><!-- End .content-->
           </div>
         </div>
@@ -338,32 +406,33 @@
 
         <div class="section-title">
           <h2>Peer Review</h2>
+          <p>Check the Comments on our Products</p>
         </div>
         <p>Working group 1 was assigned for the peer review process of this website. The review was on the
           draft version of the website, inline with the rubric provided by the faculty.</p>
 
-          <div class="container" style="text-align: center;">
-            <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/feedback.html"
+        <div class="container" style="text-align: center;">
+          <a href="https://gisedu.itc.utwente.nl/student/s2578956/Web-mapping/feedback.html"
             class="normal-btn scrollto">Click to View Feedback</a>
-             </div>
+        </div>
 
       </div>
     </section><!-- End Services Section -->
-    
-  <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials">
-    <div class="container" data-aos="zoom-in">
-    </div>
-  </section>
-  <!-- End Testimonials Section -->
 
-  <!-- ======= Team Section ======= -->
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Check our Team</p>
+          <p>Our Team</p>
         </div>
 
         <div class="row">
@@ -529,19 +598,19 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
+              <h3>Web-Mapping<span>.</span></h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                ITC, HENGELOSESTRAAT 99,
+                  7514 AE ENSCHEDE<br><br>
+                <strong>Phone:</strong>+31 (0)53 487 44 44<br>
+                <strong>Email:</strong>info-itc@utwente.nl<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#https://github.com/G-Anjanappa/Web-Mapping" class="github"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
@@ -549,32 +618,10 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#products">Products</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
           </div>
 
         </div>
@@ -583,14 +630,15 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+        &copy; Copyright © All rights reserved. | GFM 2020-2022 - Extract/Analysis & Dissemination
+        GeoData - <strong><span>Working Group 2</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->

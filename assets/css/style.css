@@ -1565,11 +1565,4 @@ section {
   color: #fff;
 }
 
-.map_container {
-  max-width: 75%;
-  height: 1000px;
-  border: 1px solid #ccc;
-  padding: 2px !important;
-  margin: 10px 0 20px 0 !important;
-}
 
