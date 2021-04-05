@@ -193,7 +193,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: 0.3s;
   line-height: 1;
-  color: #ffbb38;
+  color: rgb(73, 69, 69);
+  background: #ffbb38;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
@@ -201,8 +202,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .normal-btn:hover {
-  background: #ffbb38;
-  color: #fff;
+  background: #e99e12;
+  color: rgb(73, 69, 69);
   text-decoration: none;
 }
 
@@ -1011,7 +1012,7 @@ section {
 }
 
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
+  background: url("../img/qc.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -1563,3 +1564,5 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+
