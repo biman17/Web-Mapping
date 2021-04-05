@@ -178,12 +178,16 @@
             <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt="CSS"></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt="Javascript">
             </div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid"
+                alt="Visual Studio Code"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-11.png" class="img-fluid" alt="GitHub"></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt="OpenLayers">
             </div>
             <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt="Mapserver">
             </div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid"
-                alt="Visual Studio Code"></div>
+            
+            <div class="swiper-slide"><img src="assets/img/clients/client-10.png" class="img-fluid" alt="QGIS"></div>
+
             <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt="Global Mapper">
             </div>
             <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="Trimble INPHO">
@@ -201,84 +205,53 @@
     <!-- ======= Features Section ======= -->
     <section id="products" class="features">
       <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Products</h2>
-          <p>Check our Products</p>
-        </div>
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/dsm.PNG");' data-aos="fade-right"></div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <h4>What is a DSM?</h4>
-              <p>An elevation model
-                that includes the tops of
-                buildings,
-                trees, powerlines, and any other objects. Commonly this is seen as a canopy model
-                and only 'sees' ground where there is nothing else covering it.</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <h4>What is a DTM?</h4>
-              <p>DTM can be described
-                as a 3D representation
-                of a terrain
-                surface consisting of X, Y, Z coordinates stored in digital form. It includes not
-                only heights and elevations but other geographical elements and natural features
-                (such as rivers, mountains etc.).</p>
-            </div>
-          </div>
-          <div class="image col-lg-6" style='background-image: url("assets/img/dtm.PNG");' data-aos="fade-right"></div>
-        </div>
-      </div>
-    </section><!-- End Features Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="geoweb" class="features">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Geo-Web Products</h2>
-        </div>
-        <p>
-          The maps below show DTM and DSM for the city of Boditi, Ethiopia rendered using geo-web
-          services. Both the products are of 5m
-          resolution. It also includes contour lines drawn at an interval of 15m for both the rasters.
-          <strong>Hover the mouse on displayed rasters to see the feature information in the "Feature
-            Info" tab.</strong>
-          You can also enable/disable raster layers and switch between the OSM and Bing baselayers.
-        </p>
-        <div class="row">
-          <div class="column" id="maps">
-            <div id="map_container"
-              style="position: relative; width: 1000px; height: 600px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 5px">
-            </div>
-          </div>
-
-          <div class="column">
-            <div id="container"
-              style="position: relative;  height: 100px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 5px">
-              <h5><strong>Coordinates</strong></h5>
-              <div id="mouse_container" style="position: relative; font-size: larger; top:0 ; text-align:justify;">
+        <div class="row justify-content-center no-gutters">
+              <div class="column" id="maps">
+                  <div id="map_container"
+                      style="position: relative; width: 1000px; height: 600px; overflow: hidden; border: 1px solid rgb(31, 29, 29); margin: 5px">
+                  </div>
               </div>
             </div>
 
-            <div id="container"
-              style="position: relative;  height: 496px; overflow: hidden; border: 2px solid rgb(0, 0, 0); margin: 5px">
-              <h5><strong>Legend</strong></h5>
+              <div class="column">
+                  <div id="container"
+                      style="position: relative;  height: 100px; overflow: hidden; border: 1px solid rgb(31, 29, 29); margin: 5px">
+                      <h5><strong>Coordinates</strong></h5>
+                      <div id="mouse_container"
+                          style="position: relative; font-size: larger; top:0 ; text-align:justify;">
+                      </div>
+                  </div>
 
-              <div class="column">
-                <h5>DTM</h5>
-                <img
-                  src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2451573/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=dtm"
-                  alt="">
-              </div>
-              <br>
-              <div class="column">
-                <h5>Contour Lines</h5>
+                  <div id="container"
+                      style="position: relative;  height: 496px; overflow: hidden; border: 1px solid rgb(31, 29, 29); margin: 5px">
+                      <h5><strong>Legend</strong></h5>
+
+                      <div class="column">
+                          <h5>DTM</h5>
+                          <img src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2451573/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=dtm"
+                              alt="">
+                      </div>
+                      <br>
+                      <div class="column">
+                          <h5>Contour Lines</h5>
+
+                          <div class="column">
+                              <img src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2451573/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=contour_dtm"
+                                  alt="">
+                          </div>
+                          <div class="column">
+                              <img src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2451573/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=contour_dsm"
+                                  alt="">
+                          </div>
+                      </div>
+                      <br>
+                      <div class="column">
+                          <h5>DSM</h5>
+                          <img src="https://gisedu.itc.utwente.nl/cgi-bin/mapserv.exe?map=d:/iishome/student/s2451573/Photogrammetry-Website/configWMS.map&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=dsm"
+                              alt="">
+                      </div>
+                      <br>
+                  </div>
 
                 <div class="column">
                   <img
